@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scanTW": "postcss ./src/tailwind.css -o ./public/css/style.css --watch"
+    "scanTW": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
