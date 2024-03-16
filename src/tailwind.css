@@ -4,12 +4,12 @@
 
 @layer components {
   .link {
-    @apply text-white p-5 font-bold hover:text-yellow-500;
+    @apply text-white p-5 font-bold hover:text-sky-blue;
   }
   .button {
-    @apply bg-yellow-500 font-bold text-white border-dark-gray rounded-full border-4 p-[4px] shadow-md shadow-dark-gray;
+    @apply bg-gradient-to-b from-sky-blue to-pink-rose font-bold border-dark-gray border-2 p-[4px] rounded-full hover:text-white transition duration-500;
   }
-  .buy-now {
+  .shadow-box {
     box-shadow: 4px 4px #1e281e;
   }
 }
