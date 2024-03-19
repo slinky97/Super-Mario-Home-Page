@@ -12,4 +12,14 @@
   .shadow-box {
     box-shadow: 4px 4px #1e281e;
   }
+  .header_keyart::after {
+    background: linear-gradient(180deg, hsla(46, 87%, 97%, 0) 0, #fffdf2 100%);
+    bottom: 0;
+    content: "";
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }

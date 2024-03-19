@@ -9,15 +9,28 @@
   <body>
     <header class="mx-auto">
       <nav
-        class="bg-gray-500 flex justify-between lg:justify-start items-center"
+        class="bg-red-nintendo flex justify-between lg:justify-start items-center"
       >
         <figure class="logo p-2 md:w-1/6">
           <img
-            class="w-32 cursor-pointer"
+            class="w-24 cursor-pointer"
             src="img/Super_Mario_Bros._Wonder_Logo.png"
             alt="Super Mario wonder Logo"
           />
         </figure>
+        <div class="Logo-nintendo p-2">
+          <a
+            href="#"
+            aria-label="Pagina de inicio de Nintendo.com"
+            class="block"
+          >
+            <img
+              src="/public/img/nintendo-racetrack.svg"
+              alt="Icono Nintendo"
+              class="block w-24 h-6"
+            />
+          </a>
+        </div>
         <div class="links lg:block hidden w-1/2 md:w-2/3 text-center">
           <ul class="menu flex items-center justify-center gap-5">
             <li><a href="#" class="link">Home</a></li>
@@ -29,21 +42,89 @@
           </ul>
         </div>
       </nav>
-      <section class="header relative">
-        <picture class="absolute inset-0 w-full h-full">
-          <img
-            src="/public/img/hero-header-layer-1-large-up.jpg"
-            alt=""
-            class="object-cover"
-          />
-        </picture>
-        <picture class="absolute">
-          <img src="/public/img/hero-header-layer-2-2x.webp" alt="" />
-        </picture>
-        <picture class="absolute">
-          <img src="/public/img/hero-header-layer-3-2x.webp" alt="" />
-        </picture>
-      </section>
     </header>
+    <main class="relative">
+      <a href="#" class="absolute right-0 -top-[1px] w-[60px] z-10">
+        <img
+          src="/public/img/logo-nintendo-switch.svg"
+          alt="Visita el sitio oficial de Nintendo Switch"
+          class="block"
+        />
+      </a>
+      <picture>
+        <source
+          srcset="
+            /public/img/awards/best-family-game-es.webp    1x,
+            /public/img/awards/best-family-game-es-2x.webp 2x
+          "
+          type="image/webp"
+          width="200"
+          height="347.5"
+        />
+        <source
+          srcset="
+            /public/img/awards/best-family-game-es.png    1x,
+            /public/img/awards/best-family-game-es-2x.png 2x
+          "
+          type="image/png"
+          width="200"
+          height="347.5"
+        />
+        <img
+          class="absolute right-0 top-16 w-16 z-50"
+          alt="Ganador 2023, mejor familia."
+          src="/public/img/awards/best-family-game-es.png"
+        />
+      </picture>
+      <section class="page-transition-container relative">
+        <div class="header text-center">
+          <div class="header_keyart relative overflow-hidden">
+            <picture class="opacity-100">
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  /public/img/hero-header-layer-1-large-up.jpg    1x,
+                  /public/img/hero-header-layer-1-large-up-2x.jpg 2x
+                "
+                width="1920"
+                height="1200"
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 640px)"
+                srcset="
+                  /public/img/hero-header-layer-1-medium-up.jpg    1x,
+                  /public/img/hero-header-layer-1-medium-up-2x.jpg 2x
+                "
+                width="1440"
+                height="900"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /public/img//hero-header-layer-1.jpg   1x,
+                  /public/img/hero-header-layer-1-2x.jpg 2x
+                "
+                type="image/jpeg"
+                width="640"
+                height="820"
+              />
+              <img
+                src="/public/img/hero-header-layer-1-large-up.jpg"
+                alt=""
+                class="object-cover"
+              />
+            </picture>
+            <picture class="absolute left-0 top-0 w-full">
+              <img src="/public/img/hero-header-layer-2-2x.webp" alt="" />
+            </picture>
+            <picture class="absolute left-0 top-0 w-full">
+              <img src="/public/img/hero-header-layer-3-2x.webp" alt="" />
+            </picture>
+          </div>
+          <div class="header_content relative z-10"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
