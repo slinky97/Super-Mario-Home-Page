@@ -1,6 +1,14 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      custom: [
+        "indivisible-Thin",
+        "indivisible-Light",
+        "indivisible-Regular",
+        "indivisible-Bold",
+      ],
+    },
     extend: {
       colors: {
         "dark-gray": "#1e281e",

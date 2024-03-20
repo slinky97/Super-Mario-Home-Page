@@ -444,6 +444,46 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "indivisible-Thin";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url(/public/fonts/Indivisible-Thin.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "indivisible-Light";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url(/public/fonts/Indivisible-Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "indivisible-Regular";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/public/fonts/Indivisible-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "indivisible-Bold";
+
+  font-style: bold;
+
+  font-weight: 700;
+
+  src: url("/public/fonts/Indivisible-Bold.ttf") format("truetype");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -581,6 +621,9 @@ video {
 }
 
 .shadow-box {
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 40 30 / var(--tw-border-opacity));
   box-shadow: 4px 4px #1e281e;
 }
 
@@ -636,8 +679,20 @@ video {
   margin-right: auto;
 }
 
+.-mb-6 {
+  margin-bottom: -1.5rem;
+}
+
+.-mt-\[40\%\] {
+  margin-top: -40%;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -668,8 +723,17 @@ video {
   width: 60px;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .cursor-pointer {
@@ -696,6 +760,14 @@ video {
   overflow: hidden;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
 .bg-red-nintendo {
   --tw-bg-opacity: 1;
   background-color: rgb(230 0 18 / var(--tw-bg-opacity));
@@ -714,8 +786,40 @@ video {
   padding: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-\[24px\] {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-\[\'indivisible-Bold\'\] {
+  font-family: 'indivisible-Bold';
+}
+
+.text-\[1\.375rem\] {
+  font-size: 1.375rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.text-red-nintendo {
+  --tw-text-opacity: 1;
+  color: rgb(230 0 18 / var(--tw-text-opacity));
 }
 
 .opacity-100 {

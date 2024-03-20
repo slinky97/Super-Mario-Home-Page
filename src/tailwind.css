@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "indivisible-Thin";
+    font-style: normal;
+    font-weight: 100;
+    src: url(/public/fonts/Indivisible-Thin.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "indivisible-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/public/fonts/Indivisible-Light.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "indivisible-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/public/fonts/Indivisible-Regular.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "indivisible-Bold";
+    font-style: bold;
+    font-weight: 700;
+    src: url("/public/fonts/Indivisible-Bold.ttf") format("truetype");
+  }
+}
+
 @layer components {
   .link {
     @apply text-white p-5 font-bold hover:text-sky-blue;
@@ -10,6 +37,7 @@
     @apply bg-gradient-to-b from-sky-blue to-pink-rose font-bold border-dark-gray border-2 p-[4px] rounded-full hover:text-white transition duration-500;
   }
   .shadow-box {
+    @apply border-4 border-dark-gray;
     box-shadow: 4px 4px #1e281e;
   }
   .header_keyart::after {
