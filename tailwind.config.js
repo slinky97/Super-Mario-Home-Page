@@ -15,6 +15,9 @@ module.exports = {
         "sky-blue": "#37d1fb",
         "pink-rose": "#ee4bb4",
         "red-nintendo": "#e60012",
+        "blue-mario": "#0064c8",
+        "yellow-mario": "#ffd200",
+        "blue-tittle": "#004081",
       },
       boxShadow: {
         "solid-black": "0 0 0 4px rgba(0, 0, 0, 0.65)",

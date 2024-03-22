@@ -7,6 +7,64 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <svg class="hidden">
+      <defs>
+        <symbol id="icon-play" viewBox="0 0 27 27">
+          <path
+            d="M27 13.2396L5.6875 26.4792L5.6875 -9.31519e-07L27 13.2396Z"
+          ></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 64 64">
+          <path
+            d="M62.9586 32.83C62.9586 24.409 59.4962 16.7984 53.9269 11.3311C53.8306 11.2315 53.7253 11.1275 53.632 11.0353C53.5912 10.9951 53.5528 10.9571 53.5183 10.9226C53.4206 10.8214 53.3133 10.7154 53.2182 10.6216C53.1775 10.5814 53.1391 10.5434 53.1046 10.509C53.0073 10.4083 52.9006 10.3028 52.8042 10.2076C52.7611 10.165 52.7201 10.1245 52.683 10.0874C47.214 4.50718 39.5986 1.04663 31.1726 1.04663C14.5335 1.04663 1.04655 14.5323 1.04655 31.1701C1.04655 39.5928 4.51038 47.2048 10.0816 52.6724C10.1785 52.7727 10.2845 52.8774 10.3785 52.9702C10.4191 53.0103 10.4575 53.0483 10.492 53.0826C10.5897 53.1838 10.697 53.2899 10.792 53.3837C10.8328 53.4239 10.8712 53.4619 10.9057 53.4963C11.0034 53.5976 11.1108 53.7036 11.2058 53.7974C11.2475 53.8387 11.2869 53.8775 11.3221 53.9126C16.7857 59.4876 24.4064 62.9535 32.8326 62.9535C49.4716 62.9535 62.9586 49.4678 62.9586 32.83Z"
+            style="fill: #000"
+            stroke="white"
+            stroke-width="2"
+          ></path>
+          <path
+            d="M31.1725 59.3719C15.6198 59.3719 2.96813 46.7214 2.96813 31.17C2.96813 15.6186 15.6198 2.96802 31.1725 2.96802C46.7252 2.96802 59.3769 15.6186 59.3769 31.17C59.3769 46.7214 46.7252 59.3719 31.1725 59.3719Z"
+          ></path>
+          <path
+            d="M24.3182 39.6818C23.8939 39.2576 23.8939 38.5697 24.3182 38.1454L38.1454 24.3182C38.5697 23.8939 39.2576 23.8939 39.6818 24.3182C40.1061 24.7424 40.1061 25.4303 39.6818 25.8546L25.8546 39.6818C25.4303 40.1061 24.7424 40.1061 24.3182 39.6818Z"
+            style="fill: #000"
+          ></path>
+          <path
+            d="M39.6818 39.6818C39.2576 40.1061 38.5697 40.1061 38.1455 39.6818L24.3182 25.8546C23.894 25.4303 23.894 24.7424 24.3182 24.3182C24.7425 23.8939 25.4303 23.8939 25.8546 24.3182L39.6818 38.1454C40.1061 38.5697 40.1061 39.2576 39.6818 39.6818Z"
+            style="fill: #000"
+          ></path>
+        </symbol>
+        <symbol id="icon-carousel-btn" viewBox="0 0 90 90">
+          <path
+            d="M72.6528 15.6031C67.7443 14.6238 63.3236 11.9327 60.1604 8.00795C50.572 -3.89746 32.1345 -2.26278 24.7336 11.1462C22.2946 15.5645 18.3998 18.9881 13.7351 20.8155C-0.418822 26.3673 -4.58041 44.6109 5.73209 55.8764C9.13148 59.5929 11.1513 64.389 11.4257 69.4473C12.2717 84.784 28.133 94.4224 41.9135 87.9763C46.4562 85.8481 51.5934 85.3931 56.4333 86.6886C71.1056 90.6133 85.0766 78.3301 83.2702 63.0859C82.6757 58.0585 83.8342 52.9771 86.5476 48.7208C94.7717 35.813 87.5461 18.5794 72.6528 15.6031Z"
+            style="transition: fill 0.2s ease"
+          ></path>
+          <path
+            d="M51.5173 33.4884C52.1612 34.1343 52.1612 35.1963 51.5173 35.8422L41.8802 45.5094L51.5173 55.1656C52.1612 55.8115 52.1612 56.8735 51.5173 57.5195C50.8734 58.1654 49.8147 58.1654 49.1708 57.5195L38.5732 46.8888C37.8092 46.1225 37.8092 44.8853 38.5732 44.119L49.1708 33.4884C49.8147 32.8424 50.8734 32.8424 51.5173 33.4884Z"
+            style="transition: fill 0.2s ease"
+          ></path>
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 16 16">
+          <path
+            d="M15.1915 8C12.0346 6.27326 9.43571 3.67442 7.69153 0.5C5.96478 3.65698 3.36595 6.25582 0.191528 8C3.34851 9.72675 5.94734 12.3256 7.69153 15.5C9.41827 12.343 12.0171 9.74419 15.1915 8Z"
+          ></path>
+        </symbol>
+        <symbol id="icon-star-hollow" viewBox="0 0 200 200">
+          <path
+            d="M100 0A154.68 154.68 0 0 1 0 100c47.51 15.26 84.75 52.49 100 100 15.25-47.51 52.49-84.74 100-100A154.68 154.68 0 0 1 100 0zm0 132.55A81.884 81.884 0 0 0 67.45 100 81.821 81.821 0 0 0 100 67.45 81.821 81.821 0 0 0 132.55 100 81.821 81.821 0 0 0 100 132.55z"
+          ></path>
+        </symbol>
+        <symbol id="icon-modal-close" viewBox="0 0 19 19">
+          <path
+            d="m3 3 6 6.5L3 16m12 0L9 9.5 15 3"
+            stroke="#FFF"
+            stroke-width="5"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
     <header class="mx-auto">
       <nav
         class="bg-red-nintendo flex justify-between lg:justify-start items-center"
@@ -158,12 +216,75 @@
               </p>
               <div>
                 <a href="#">
-                  <span> Comprar ya! </span>
+                  <span
+                    class="bg-blue-mario items-center text-white inline-flex shadow-box rounded-2xl font-['indivisible-Bold'] text-[1.375rem] p-4 gap-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      role="img"
+                      class="size-[0.681em] fill-yellow-mario w-[0.681em]"
+                    >
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    Comprar ya!
+                    <svg
+                      aria-hidden="true"
+                      role="img"
+                      class="size-[0.681em] fill-yellow-mario w-[0.681em]"
+                    >
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </span>
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <article
+          class="mt-8 relative z-20 px-2"
+          aria-labelledby="trailer-section-title"
+        >
+          <header class="mb-2 px-2">
+            <h1
+              class="font-['indivisible-Bold'] leading-[1.05] text-4xl text-center text-blue-tittle"
+            >
+              ¡Bienvenidos al Reino Flor!
+            </h1>
+          </header>
+          <div class="px-2">
+            <button
+              class="overflow-visible relative z-20 rounded-[20px] shadow-box mx-auto mt-6"
+            >
+              <picture class="w-full overflow-hidden">
+                <source
+                  srcset="
+                    https://assets.nintendo.com/image/upload/w_800,f_auto,q_auto/v1692138413/Microsites/super-mario-bros-wonder/microsite/video/posters/main-trailer  1x,
+                    https://assets.nintendo.com/image/upload/w_1600,f_auto,q_auto/v1692138413/Microsites/super-mario-bros-wonder/microsite/video/posters/main-trailer 2x
+                  "
+                />
+                <img
+                  class="w-full rounded-2xl"
+                  alt="trailer"
+                  src="https://assets.nintendo.com/image/upload/w_800,f_auto,q_auto/v1692138413/Microsites/super-mario-bros-wonder/microsite/video/posters/main-trailer"
+                />
+              </picture>
+              <div></div>
+              <div></div>
+              <svg
+                class="absolute bottom-[-2px] left-[-2px] w-[calc(100% + 4px)] rounded-bl-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 566 101"
+                fill="none"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 101H566V0C563.548 25.7012 544.113 52.7717 522.765 65.5912C500.938 78.6596 462.428 86.1276 424.096 86.1276C319.149 86.1276 253.967 59.9903 163.97 59.9903C120.735 59.9903 53.6997 67.1469 0 85.0071V101Z"
+                  fill="#1e281e"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </article>
       </section>
     </main>
   </body>
