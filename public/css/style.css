@@ -624,7 +624,7 @@ video {
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(30 40 30 / var(--tw-border-opacity));
-  box-shadow: 4px 4px #1e281e;
+  box-shadow: 2px 4px #1e281e;
 }
 
 .header_keyart::after {
@@ -636,6 +636,22 @@ video {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+
+.double-shadow {
+  --main-color: #1e281e;
+  --shadow-size: 2px;
+  --duration-factor: 0;
+  --color-white: #fff;
+  border: 4px solid #1e281e;
+  border-radius: 50%;
+  box-shadow: var(--shadow-size) var(--shadow-size) 0 0 var(--main-color),
+      0 0 0 6px var(--color-white),
+      var(--shadow-size) var(--shadow-size) 0 6px var(--color-white);
+  padding: 14px;
+  transition: calc(var(--duration-factor) * 0.1s) ease-in-out;
+  transition-property: transform, box-shadow;
+  will-change: box-shadow, transform;
 }
 
 .absolute {
@@ -658,6 +674,10 @@ video {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .left-\[-2px\] {
   left: -2px;
 }
@@ -670,8 +690,20 @@ video {
   top: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-16 {
   top: 4rem;
+}
+
+.top-full {
+  top: 100%;
+}
+
+.bottom-auto {
+  bottom: auto;
 }
 
 .z-10 {
@@ -711,6 +743,10 @@ video {
   margin-top: 2rem;
 }
 
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -727,6 +763,10 @@ video {
   display: inline-flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -734,6 +774,15 @@ video {
 .size-\[0\.681em\] {
   width: 0.681em;
   height: 0.681em;
+}
+
+.size-\[30px\] {
+  width: 30px;
+  height: 30px;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-6 {
@@ -773,8 +822,30 @@ video {
   max-width: max-content;
 }
 
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-\[max-content\] {
+  grid-template-columns: max-content;
+}
+
+.grid-rows-\[max-content\] {
+  grid-template-rows: max-content;
 }
 
 .items-center {
@@ -805,6 +876,10 @@ video {
   overflow: visible;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .text-wrap {
   text-wrap: wrap;
 }
@@ -817,6 +892,10 @@ video {
   border-radius: 20px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-bl-\[20px\] {
   border-bottom-left-radius: 20px;
 }
@@ -826,9 +905,19 @@ video {
   background-color: rgb(0 100 200 / var(--tw-bg-opacity));
 }
 
+.bg-brigth-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 232 255 / var(--tw-bg-opacity));
+}
+
 .bg-red-nintendo {
   --tw-bg-opacity: 1;
   background-color: rgb(230 0 18 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-mario {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 210 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-75 {
@@ -837,6 +926,10 @@ video {
 
 .fill-yellow-mario {
   fill: #ffd200;
+}
+
+.fill-blue-mario {
+  fill: #0064c8;
 }
 
 .object-cover {
@@ -862,14 +955,29 @@ video {
   padding-right: 1rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[40px\] {
   padding-left: 40px;
   padding-right: 40px;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-\[24px\] {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -900,6 +1008,11 @@ video {
 .text-blue-tittle {
   --tw-text-opacity: 1;
   color: rgb(0 64 129 / var(--tw-text-opacity));
+}
+
+.text-dark-gray {
+  --tw-text-opacity: 1;
+  color: rgb(30 40 30 / var(--tw-text-opacity));
 }
 
 .text-red-nintendo {

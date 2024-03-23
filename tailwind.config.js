@@ -18,6 +18,7 @@ module.exports = {
         "blue-mario": "#0064c8",
         "yellow-mario": "#ffd200",
         "blue-tittle": "#004081",
+        "brigth-blue": "#81e8ff",
       },
       boxShadow: {
         "solid-black": "0 0 0 4px rgba(0, 0, 0, 0.65)",
